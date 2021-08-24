@@ -21,6 +21,10 @@ public final class FeedViewController: UITableViewController, UITableViewDataSou
 		refresh()
 	}
 
+	@IBAction private func dismissError() {
+		errorView.hideMessage()
+	}
+
 	@IBAction private func refresh() {
 		viewModel?.loadFeed()
 	}
