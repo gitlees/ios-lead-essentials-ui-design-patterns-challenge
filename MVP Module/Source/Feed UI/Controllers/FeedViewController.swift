@@ -27,6 +27,10 @@ public final class FeedViewController: UITableViewController, UITableViewDataSou
 		delegate?.didRequestFeedRefresh()
 	}
 
+	@IBAction private func dismissError() {
+		errorView.hideMessage()
+	}
+
 	func display(_ viewModel: FeedLoadingViewModel) {
 		if viewModel.isLoading {
 			refreshControl?.beginRefreshing()
