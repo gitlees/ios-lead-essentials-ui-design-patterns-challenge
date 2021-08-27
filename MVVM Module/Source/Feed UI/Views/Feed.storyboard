@@ -26,7 +26,6 @@
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
                                     <connections>
-                                        <action selector="dismissError" destination="1hh-nG-9OR" eventType="touchUpInside" id="t84-PX-mBa"/>
                                         <action selector="hideMessage" destination="clu-9B-M8g" eventType="touchUpInside" id="WqB-Om-qe0"/>
                                     </connections>
                                 </button>
