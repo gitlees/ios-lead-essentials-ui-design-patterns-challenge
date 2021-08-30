@@ -40,6 +40,10 @@ extension FeedViewController {
 		ds?.tableView?(tableView, cancelPrefetchingForRowsAt: [index])
 	}
 
+	private var errorView: ErrorView? {
+		tableView.tableHeaderView as? ErrorView
+	}
+
 	func simulateTapOnErrorMessage() {
 		errorView?.button.simulateTap()
 	}
